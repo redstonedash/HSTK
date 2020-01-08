@@ -1,0 +1,60 @@
+﻿  main.cpp
+E:\HSTK\ThirdParty\flecs\flecs\flecs.hpp(356,37): warning C4244: 'argument': conversion from 'uint32_t' to 'float', possible loss of data
+E:\HSTK\HSTKEditor\ExternalStructModual.h(10,1): warning C4005: 'COMPONENT': macro redefinition
+E:\HSTK\HSTKEditor\ExternalStructModual.h(8): message : see previous definition of 'COMPONENT'
+E:\HSTK\HSTKEditor\ExternalStructModual.h(18,1): warning C4005: 'COMPONENT': macro redefinition
+E:\HSTK\HSTKEditor\ExternalStructModual.h(10): message : see previous definition of 'COMPONENT'
+E:\HSTK\HSTKEditor\RenderModual.h(11,1): warning C4005: 'COMPONENTS': macro redefinition
+E:\HSTK\HSTKEditor\ExternalStructModual.h(7): message : see previous definition of 'COMPONENTS'
+E:\HSTK\HSTKEditor\RenderModual.h(12,1): warning C4005: 'COMPONENT': macro redefinition
+E:\HSTK\HSTKEditor\ExternalStructModual.h(18): message : see previous definition of 'COMPONENT'
+E:\HSTK\HSTKEditor\RenderModual.h(14,1): warning C4005: 'COMPONENT': macro redefinition
+E:\HSTK\HSTKEditor\RenderModual.h(12): message : see previous definition of 'COMPONENT'
+E:\HSTK\HSTKEditor\RenderModual.h(27,1): warning C4005: 'SYSTEM': macro redefinition
+E:\HSTK\HSTKEditor\RenderModual.h(24): message : see previous definition of 'SYSTEM'
+E:\HSTK\HSTKEditor\RenderModual.h(35,22): warning C4018: '<': signed/unsigned mismatch
+E:\HSTK\HSTKEditor\RenderModual.h(43,33): warning C4018: '<': signed/unsigned mismatch
+E:\HSTK\HSTKEditor\RenderModual.h(60,33): warning C4018: '<': signed/unsigned mismatch
+E:\HSTK\HSTKEditor\RenderModual.h(87,1): warning C4005: 'SYSTEM': macro redefinition
+E:\HSTK\HSTKEditor\RenderModual.h(27): message : see previous definition of 'SYSTEM'
+E:\HSTK\HSTKEditor\RenderModual.h(92,1): warning C4005: 'COMPONENT': macro redefinition
+E:\HSTK\HSTKEditor\RenderModual.h(14): message : see previous definition of 'COMPONENT'
+E:\HSTK\HSTKEditor\EditorModual.h(14,1): warning C4005: 'COMPONENTS': macro redefinition
+E:\HSTK\HSTKEditor\RenderModual.h(11): message : see previous definition of 'COMPONENTS'
+E:\HSTK\HSTKEditor\EditorModual.h(15,1): warning C4005: 'COMPONENT': macro redefinition
+E:\HSTK\HSTKEditor\RenderModual.h(92): message : see previous definition of 'COMPONENT'
+E:\HSTK\HSTKEditor\EditorModual.h(17,1): warning C4005: 'COMPONENT': macro redefinition
+E:\HSTK\HSTKEditor\EditorModual.h(15): message : see previous definition of 'COMPONENT'
+E:\HSTK\HSTKEditor\EditorModual.h(25,1): warning C4005: 'SYSTEMS': macro redefinition
+E:\HSTK\HSTKEditor\RenderModual.h(20): message : see previous definition of 'SYSTEMS'
+E:\HSTK\HSTKEditor\EditorModual.h(30,1): warning C4005: 'SYSTEM': macro redefinition
+E:\HSTK\HSTKEditor\RenderModual.h(87): message : see previous definition of 'SYSTEM'
+E:\HSTK\HSTKEditor\EditorModual.h(33,1): warning C4005: 'SYSTEM': macro redefinition
+E:\HSTK\HSTKEditor\EditorModual.h(30): message : see previous definition of 'SYSTEM'
+E:\HSTK\HSTKEditor\EditorModual.h(63,20): warning C4018: '<': signed/unsigned mismatch
+E:\HSTK\HSTKEditor\EditorModual.h(80,20): warning C4018: '<': signed/unsigned mismatch
+E:\HSTK\HSTKEditor\EditorModual.h(88,20): warning C4018: '<': signed/unsigned mismatch
+E:\HSTK\HSTKEditor\EditorModual.h(103,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\HSTK\HSTKEditor\EditorModual.h(108,161): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\HSTK\HSTKEditor\EditorModual.h(108,147): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\HSTK\HSTKEditor\EditorModual.h(131,20): warning C4018: '<': signed/unsigned mismatch
+E:\HSTK\HSTKEditor\EditorModual.h(132,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\HSTK\HSTKEditor\EditorModual.h(132,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\HSTK\HSTKEditor\EditorModual.h(133,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\HSTK\HSTKEditor\EditorModual.h(133,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\HSTK\HSTKEditor\EditorModual.h(162,1): warning C4005: 'SYSTEM': macro redefinition
+E:\HSTK\HSTKEditor\EditorModual.h(33): message : see previous definition of 'SYSTEM'
+E:\HSTK\HSTKEditor\EditorModual.h(167,1): warning C4005: 'COMPONENT': macro redefinition
+E:\HSTK\HSTKEditor\EditorModual.h(17): message : see previous definition of 'COMPONENT'
+E:\HSTK\HSTKEditor\main.cpp(222,35): warning C4838: conversion from 'char' to 'unsigned char' requires a narrowing conversion
+E:\HSTK\HSTKEditor\main.cpp(222,50): warning C4838: conversion from 'char' to 'unsigned char' requires a narrowing conversion
+E:\HSTK\HSTKEditor\main.cpp(222,65): warning C4838: conversion from 'char' to 'unsigned char' requires a narrowing conversion
+E:\HSTK\HSTKEditor\main.cpp(253,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\HSTK\HSTKEditor\main.cpp(253,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  raylib.lib(core.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  Finished generating code
+  HSTKEditor.vcxproj -> E:\HSTK\HSTK\Debug\HSTKEditor.exe
+  0 File(s) copied
