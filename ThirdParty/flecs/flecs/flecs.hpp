@@ -1181,7 +1181,7 @@ private:
 template<typename ... Components>
 class system final : public entity {
 public:
-    system(const world& world, const char name = nullptr)
+    system(const world& world, const char * name = nullptr)
         : m_kind(static_cast<EcsSystemKind>(OnUpdate))
         , m_name(name) 
         , m_on_demand(false)

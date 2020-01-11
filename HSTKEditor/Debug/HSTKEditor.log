@@ -1,9 +1,13 @@
 ﻿  main.cpp
-c:\users\s189064\documents\github\hstk\thirdparty\flecs\flecs\flecs.hpp(366): warning C4244: 'argument': conversion from 'uint32_t' to 'float', possible loss of data
+c:\users\s189064\documents\github\hstk\thirdparty\flecs\flecs\flecs.hpp(361): warning C4244: 'argument': conversion from 'uint32_t' to 'float', possible loss of data
 c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(10): warning C4005: 'COMPONENT': macro redefinition
   c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(8): note: see previous definition of 'COMPONENT'
 c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(18): warning C4005: 'COMPONENT': macro redefinition
   c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(10): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(20): error C2664: 'ecs_entity_t ecs_new_component(ecs_world_t *,const char *,size_t)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(20): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(20): error C2664: 'ecs_type_t ecs_type_from_entity(ecs_world_t *,ecs_entity_t)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(20): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
 c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(11): warning C4005: 'COMPONENTS': macro redefinition
   c:\users\s189064\documents\github\hstk\hstkeditor\externalstructmodual.h(7): note: see previous definition of 'COMPONENTS'
 c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(12): warning C4005: 'COMPONENT': macro redefinition
@@ -19,9 +23,18 @@ c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(87): warning C4
   c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(27): note: see previous definition of 'SYSTEM'
 c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(92): warning C4005: 'COMPONENT': macro redefinition
   c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(14): note: see previous definition of 'COMPONENT'
-c:\users\s189064\documents\github\hstk\hstkeditor\editormodual.hpp(4): error C2664: 'flecs::component<Vector2>::component(flecs::component<Vector2> &&)': cannot convert argument 1 from 'ecs_world_t *' to 'const flecs::world &'
-  c:\users\s189064\documents\github\hstk\hstkeditor\editormodual.hpp(4): note: Reason: cannot convert from 'ecs_world_t *' to 'const flecs::world'
-  c:\users\s189064\documents\github\hstk\hstkeditor\editormodual.hpp(4): note: Constructor for class 'flecs::world' is declared 'explicit'
+c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(94): error C2664: 'ecs_entity_t ecs_new_component(ecs_world_t *,const char *,size_t)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(94): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(94): error C2664: 'ecs_type_t ecs_type_from_entity(ecs_world_t *,ecs_entity_t)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(94): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(98): error C2664: 'ecs_entity_t ecs_new_system(ecs_world_t *,const char *,EcsSystemKind,const char *,ecs_system_action_t)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(98): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(98): error C2664: 'ecs_type_t ecs_type_from_entity(ecs_world_t *,ecs_entity_t)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\rendermodual.h(98): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\editormodual.hpp(22): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'flecs::system<Window>'
+  c:\users\s189064\documents\github\hstk\hstkeditor\editormodual.hpp(22): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\s189064\documents\github\hstk\hstkeditor\editormodual.hpp(26): error C2397: conversion from 'int' to 'float' requires a narrowing conversion
+c:\users\s189064\documents\github\hstk\hstkeditor\editormodual.hpp(26): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(143): error C2065: 'inputManager': undeclared identifier
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(147): error C2065: 'FSelect': undeclared identifier
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(148): error C2065: 'inputManager': undeclared identifier
@@ -32,13 +45,39 @@ c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(153): error C2660: 'V
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(153): error C2660: 'Vector2Add': function does not take 1 arguments
   c:\users\s189064\documents\github\hstk\thirdparty\raylib\raymath.h(176): note: see declaration of 'Vector2Add'
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(182): warning C4838: conversion from 'char' to 'unsigned char' requires a narrowing conversion
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(191): error C2679: binary '=': no operator found which takes a right-hand operand of type 'ecs_world_t *' (or there is no acceptable conversion)
+  c:\users\s189064\documents\github\hstk\thirdparty\flecs\flecs\flecs.hpp(329): note: could be 'flecs::world &flecs::world::operator =(flecs::world &&)'
+  c:\users\s189064\documents\github\hstk\thirdparty\flecs\flecs\flecs.hpp(327): note: or       'flecs::world &flecs::world::operator =(const flecs::world &)'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(191): note: while trying to match the argument list '(flecs::world, ecs_world_t *)'
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(193): error C3861: 'RegisterEditorModualComponents': identifier not found
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(194): error C3861: 'RegisterEditorModualSystems': identifier not found
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(197): error C2065: 'ortho': undeclared identifier
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(198): error C2065: 'cone': undeclared identifier
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(199): error C2065: 'cone': undeclared identifier
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(199): error C2065: 'ortho': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(200): error C2664: 'ecs_entity_t ecs_new_entity(ecs_world_t *,const char *,const char *)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(200): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(200): error C2664: 'ecs_type_t ecs_type_from_entity(ecs_world_t *,ecs_entity_t)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(200): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(201): error C2664: 'ecs_entity_t ecs_new_entity(ecs_world_t *,const char *,const char *)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(201): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(201): error C2664: 'ecs_type_t ecs_type_from_entity(ecs_world_t *,ecs_entity_t)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(201): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(203): error C2664: 'ecs_entity_t _ecs_set_ptr(ecs_world_t *,ecs_entity_t,ecs_entity_t,size_t,const void *)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(203): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(204): error C2664: 'ecs_entity_t _ecs_set_ptr(ecs_world_t *,ecs_entity_t,ecs_entity_t,size_t,const void *)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(204): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(205): error C2664: 'ecs_entity_t _ecs_set_ptr(ecs_world_t *,ecs_entity_t,ecs_entity_t,size_t,const void *)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(205): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(207): error C2664: 'ecs_entity_t _ecs_set_ptr(ecs_world_t *,ecs_entity_t,ecs_entity_t,size_t,const void *)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(207): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(208): error C2664: 'ecs_entity_t _ecs_set_ptr(ecs_world_t *,ecs_entity_t,ecs_entity_t,size_t,const void *)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(208): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(209): error C2664: 'ecs_entity_t _ecs_set_ptr(ecs_world_t *,ecs_entity_t,ecs_entity_t,size_t,const void *)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(209): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(213): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(217): error C2065: 'inputManager': undeclared identifier
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(219): error C2065: 'inputManager': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(223): error C2664: 'bool ecs_progress(ecs_world_t *,float)': cannot convert argument 1 from 'flecs::world' to 'ecs_world_t *'
+  c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(223): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
 c:\users\s189064\documents\github\hstk\hstkeditor\main.cpp(224): error C2065: 'inputManager': undeclared identifier
