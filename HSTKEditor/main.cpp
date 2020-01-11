@@ -1,4 +1,3 @@
-#include "boilerPlateIncludes.h"
 #include <vector>
 #include <stdio.h>
 #include <random>
@@ -8,7 +7,7 @@
 #include "rlgl.h"
 #include "ExternalStructModual.h"
 #include "RenderModual.h"
-#include "EditorModual.h"
+#include "EditorModual.hpp"
 Rectangle windows[] = { {0,0,1453,28},{0,28,465,307}, {465,28,576,307}, {0,335,465,313}, {465, 335, 576,313 }, {1041,28,412,907}, {0,648,1041,43},{0,691,1041,245} };
 RenderTexture2D renderTextures[sizeof(windows) / sizeof(Rectangle)];
 	
@@ -157,66 +156,27 @@ void HandleOrthoWindowInput(float*windowZoom, Vector2*windowOffset, Rectangle wi
 }
 
 
-void topWindow(int i) {
-	Vector2 windowResolution = { (float) windows[i].width, (float) windows[i].height };
-	Camera c = { {topWindowOffset.x,1,topWindowOffset.y}, {topWindowOffset.x,0,topWindowOffset.y}, {0,0,1}, std::pow(topWindowZoom,5.0f), CAMERA_ORTHOGRAPHIC };
-	BeginTextureMode(renderTextures[i]);
-		DrawText("Top", 0, 0, 12, LIME);
-		ClearBackground({ (unsigned char)5,(unsigned char)5,(unsigned char)40,(unsigned char)255 });
-		BeginMode3D({ {topWindowOffset.x,1,topWindowOffset.y}, {topWindowOffset.x,0,topWindowOffset.y}, {0,0,1}, std::pow(topWindowZoom,5.0f), CAMERA_ORTHOGRAPHIC });
-			DrawGridTop(10, 1);
-			ecs_run(gameState, FDrawOrthoWindow, -1, &ortho);
-			byte buf[sizeof(Camera) + sizeof(Rectangle) + 1 + sizeof(float)];
-			memcpy(buf, &c, sizeof(Camera));
-			memcpy(buf + sizeof(Camera), &windows[i], sizeof(Rectangle));
-			*(buf + sizeof(Camera) + sizeof(Rectangle)) = 0b00000101;
-			*((float *)(buf + sizeof(Camera) + sizeof(Rectangle) + 1)) = std::pow(topWindowZoom, 5.0f); //this looks a little confusing but we are just building up a byte array to pass to the system
-			ecs_run(gameState, FGizmos, -1, buf);
-			//Gizmos(c, windows[i], 0b00000101, std::pow(topWindowZoom, 5.0f));
-		EndMode3D();
-	EndTextureMode();
-	HandleOrthoWindowInput(&topWindowZoom, &topWindowOffset, windows[i], c);
-}
-void frontWindow(int i) {
-	Vector2 windowResolution = { (float)windows[i].width, (float)windows[i].height };
-	Camera c = { {frontWindowOffset.x,frontWindowOffset.y,-1}, {frontWindowOffset.x,frontWindowOffset.y,0}, {0,1,0}, std::pow(frontWindowZoom,5.0f), CAMERA_ORTHOGRAPHIC };
-	BeginTextureMode(renderTextures[i]);
-	DrawText("Front", 0, 0, 12, LIME);
-	ClearBackground({ (unsigned char)5,(unsigned char)5,(unsigned char)40,(unsigned char)255 });
-	BeginMode3D({ {frontWindowOffset.x,frontWindowOffset.y,-1}, {frontWindowOffset.x,frontWindowOffset.y,0}, {0,1,0}, std::pow(frontWindowZoom,5.0f), CAMERA_ORTHOGRAPHIC });
-	DrawGridFront(10, 1);
-	ecs_run(gameState, FDrawOrthoWindow, -1, &ortho);
-	byte buf[sizeof(Camera) + sizeof(Rectangle) + 1 + sizeof(float)];
-	memcpy(buf, &c, sizeof(Camera));
-	memcpy(buf + sizeof(Camera), &windows[i], sizeof(Rectangle));
-	*(buf + sizeof(Camera) + sizeof(Rectangle)) = 0b00000011;
-	*((float*)(buf + sizeof(Camera) + sizeof(Rectangle) + 1)) = std::pow(frontWindowZoom, 5.0f); //this looks a little confusing but we are just building up a byte array to pass to the system
-	ecs_run(gameState, FGizmos, -1, buf);
-	//Gizmos(c, windows[i], 0b00000011, std::pow(frontWindowZoom, 5.0f));
-	EndMode3D();
-	EndTextureMode();
-	HandleOrthoWindowInput(&frontWindowZoom, &frontWindowOffset, windows[i], c);
-}
-void rightWindow(int i) {
-	Vector2 windowResolution = { (float)windows[i].width, (float)windows[i].height };
-	Camera c = { {1,rightWindowOffset.y,rightWindowOffset.x}, {0,rightWindowOffset.y,rightWindowOffset.x}, {0,1,0}, std::pow(rightWindowZoom,5.0f), CAMERA_ORTHOGRAPHIC };
-	BeginTextureMode(renderTextures[i]);
-	DrawText("Right", 0, 0, 12, LIME);
-	ClearBackground({ (unsigned char)5,(unsigned char)5,(unsigned char)40,(unsigned char)255 });
-	BeginMode3D(c);
-	DrawGridRight(10, 1);
-	ecs_run(gameState, FDrawOrthoWindow, -1, &ortho);
-	byte buf[sizeof(Camera) + sizeof(Rectangle) + 1 + sizeof(float)];
-	memcpy(buf, &c, sizeof(Camera));
-	memcpy(buf + sizeof(Camera), &windows[i], sizeof(Rectangle));
-	*(buf + sizeof(Camera) + sizeof(Rectangle)) = 0b00000110;
-	*((float*)(buf + sizeof(Camera) + sizeof(Rectangle) + 1)) = std::pow(rightWindowZoom, 5.0f); //this looks a little confusing but we are just building up a byte array to pass to the system
-	ecs_run(gameState, FGizmos, -1, buf);
-	//Gizmos(c, windows[i], 0b00000110, std::pow(rightWindowZoom, 5.0f));
-	EndMode3D();
-	EndTextureMode();
-	HandleOrthoWindowInput(&rightWindowZoom, &rightWindowOffset, windows[i], c);
-}
+//void topWindow(int i) {
+//	Vector2 windowResolution = { (float) windows[i].width, (float) windows[i].height };
+//	Camera c = { {topWindowOffset.x,1,topWindowOffset.y}, {topWindowOffset.x,0,topWindowOffset.y}, {0,0,1}, std::pow(topWindowZoom,5.0f), CAMERA_ORTHOGRAPHIC };
+//	BeginTextureMode(renderTextures[i]);
+//		DrawText("Top", 0, 0, 12, LIME);
+//		ClearBackground({ (unsigned char)5,(unsigned char)5,(unsigned char)40,(unsigned char)255 });
+//		BeginMode3D({ {topWindowOffset.x,1,topWindowOffset.y}, {topWindowOffset.x,0,topWindowOffset.y}, {0,0,1}, std::pow(topWindowZoom,5.0f), CAMERA_ORTHOGRAPHIC });
+//			DrawGridTop(10, 1);
+//			ecs_run(gameState, FDrawOrthoWindow, -1, &ortho);
+//			byte buf[sizeof(Camera) + sizeof(Rectangle) + 1 + sizeof(float)];
+//			memcpy(buf, &c, sizeof(Camera));
+//			memcpy(buf + sizeof(Camera), &windows[i], sizeof(Rectangle));
+//			*(buf + sizeof(Camera) + sizeof(Rectangle)) = 0b00000101;
+//			*((float *)(buf + sizeof(Camera) + sizeof(Rectangle) + 1)) = std::pow(topWindowZoom, 5.0f); //this looks a little confusing but we are just building up a byte array to pass to the system
+//			ecs_run(gameState, FGizmos, -1, buf);
+//			//Gizmos(c, windows[i], 0b00000101, std::pow(topWindowZoom, 5.0f));
+//		EndMode3D();
+//	EndTextureMode();
+//	HandleOrthoWindowInput(&topWindowZoom, &topWindowOffset, windows[i], c);
+//}
+
 void todo(int i) {
 	srand(i);
 	Color randomColor = { ((char)rand()),((char)rand()),((char)rand()),255 };
@@ -225,8 +185,6 @@ void todo(int i) {
 	EndTextureMode();
 	DrawTextureRec(renderTextures[i].texture, { 0,0,windows[i].width,windows[i].height }, { windows[i].x, windows[i].y }, WHITE);
 }
-
-void (*windowBehaviour[])(int) = { todo, rightWindow, topWindow, todo, frontWindow, todo, todo, todo };
 
 int main() {
 	InitWindow(width, height, "HSTK - Editor");
@@ -242,9 +200,11 @@ int main() {
 	ECS_ENTITY(gameState, testObject1, Model, Transform, BoundingBox);
 	ECS_ENTITY(gameState, testObject2, Model, Transform, BoundingBox);
 	Model knot = LoadModelFromMesh(GenMeshKnot(1.0f, 2.0f, 16, 128));
+	ecs_set(gameState, testObject1, Transform, { 0,0,0 });
 	ecs_set_ref(gameState, testObject1, Model, knot);
 	ecs_set_ref(gameState, testObject1, BoundingBox, MeshBoundingBox(knot.meshes[0]));
 	Model cylinder = LoadModelFromMesh(GenMeshCylinder(2, 1, 32));
+	ecs_set(gameState, testObject2, Transform, { 0,0,0 });
 	ecs_set_ref(gameState, testObject2, Model, cylinder);
 	ecs_set_ref(gameState, testObject2, BoundingBox, MeshBoundingBox(cylinder.meshes[0]));;
 	
@@ -260,10 +220,7 @@ int main() {
 		}
 		BeginDrawing();
 		ClearBackground(WHITE);
-		for (int i = 0; i < sizeof(windows)/sizeof(Rectangle); i++) {
-			windowBehaviour[i](i);
-			DrawTextureRec(renderTextures[i].texture, { 0,0,windows[i].width,-windows[i].height }, { windows[i].x, windows[i].y }, WHITE);
-		}
+		ecs_progress(gameState, GetFrameTime());
 		inputManager.lastMousePosition = GetMousePosition();
 		EndDrawing();
 	}

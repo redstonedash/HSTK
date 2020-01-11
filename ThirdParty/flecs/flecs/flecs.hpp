@@ -172,6 +172,11 @@ public:
         return m_rows->count;
     }
 
+    /* Return delta_time of current frame */
+    float delta_time() const {
+        return m_rows->delta_time;
+    }
+
     /* Is column shared */
     bool is_shared(uint32_t column) const {
         return ecs_is_shared(m_rows, column);
@@ -411,6 +416,14 @@ public:
     world_filter filter(const flecs::filter& filter) const;
     filter_iterator begin() const;
     filter_iterator end() const;
+
+    /* Count entities */
+    template <typename T>
+    int count() const {
+        return _ecs_count(m_world, component_base<T>::s_type);
+    }
+
+    int count(flecs::filter filter) const;
     
 private:
     void init_builtin_components();
@@ -686,7 +699,7 @@ public:
 //// Entity range, allows for operating on a range of consecutive entities
 ////////////////////////////////////////////////////////////////////////////////
 
-class entity_range final : entity_fluent<entity_range> {
+class entity_range final : public entity_fluent<entity_range> {
     using entity_iterator = range_iterator<entity_t>;
 public:
     entity_range(const world& world, std::int32_t count) 
@@ -695,17 +708,17 @@ public:
         , m_count(count) { }
 
     template <typename Func>
-    void invoke(Func action) {
+    void invoke(Func action) const {
         for (auto id : *this) {
             action(m_world, id);
         }
     }
     
-    entity_iterator begin() {
+    entity_iterator begin() const {
         return entity_iterator(m_id_start);
     }
 
-    entity_iterator end() {
+    entity_iterator end() const {
         return entity_iterator(m_id_start + m_count);
     }
 
@@ -1168,7 +1181,7 @@ private:
 template<typename ... Components>
 class system final : public entity {
 public:
-    system(const world& world, const char *name = nullptr)
+    system(const world& world, const char name = nullptr)
         : m_kind(static_cast<EcsSystemKind>(OnUpdate))
         , m_name(name) 
         , m_on_demand(false)
@@ -1618,6 +1631,10 @@ inline filter_iterator world::begin() const {
 
 inline filter_iterator world::end() const {
     return filter_iterator();
+}
+
+inline int world::count(flecs::filter filter) const {
+    return ecs_count_w_filter(m_world, filter.c_ptr());
 }
 
 inline void world::init_builtin_components() {

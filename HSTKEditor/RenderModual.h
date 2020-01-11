@@ -42,7 +42,7 @@ void updateCamera(ecs_rows_t* row) {
     ECS_COLUMN(row, Transform, trs, 2);
     for (int entity = 0; entity < row->count; entity++) {
         auto rot = QuaternionToMatrix(trs[entity].rotation);
-        auto trans = MatrixTranslate(trs[entity].position.x, trs[entity].position.y, trs[entity].position.z);
+        auto trans = MatrixTranslate(trs[entity].translation.x, trs[entity].translation.y, trs[entity].translation.z);
         auto scale = MatrixScale(trs[entity].scale.x, trs[entity].scale.y, trs[entity].scale.z);
 
         Matrix trsMatrix = MatrixMultiply(MatrixMultiply(scale, rot), trans);

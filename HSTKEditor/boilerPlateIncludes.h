@@ -1,7 +1,9 @@
 #pragma once
 #include <cmath>
 #include "raylib.h"
+#include "rlgl.h"
 #include "flecs.h"
+#include "flecs/flecs.hpp"
 #include "raymath.h"
 template<typename T> T* addrOf(T&& v) { return &v; }
 #undef ecs_set
@@ -12,7 +14,7 @@ template<typename T> T* addrOf(T&& v) { return &v; }
 #define ecs_set_ref(world, entity, component, ...)\
     _ecs_set_ptr(world, entity, ecs_entity(component), sizeof(component), &__VA_ARGS__)
 
-_declspec(selectany) ecs_world_t * gameState;
+_declspec(selectany) flecs::world gameState;
 
 Vector2 GetWorldToTexture(Vector3 position, Camera camera, int screenWidth, int screenHeight)
 {

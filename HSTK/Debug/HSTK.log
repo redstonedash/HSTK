@@ -1,23 +1,4 @@
-﻿cl : command line warning D9002: ignoring unknown option '/showincludes'
-  main.cpp
-E:\HSTK\HSTK\ExternalStructModual.h(10,1): warning C4005: 'COMPONENT': macro redefinition
-E:\HSTK\HSTK\ExternalStructModual.h(8): message : see previous definition of 'COMPONENT'
-E:\HSTK\HSTK\ExternalStructModual.h(18,1): warning C4005: 'COMPONENT': macro redefinition
-E:\HSTK\HSTK\ExternalStructModual.h(10): message : see previous definition of 'COMPONENT'
-E:\HSTK\HSTK\RenderModual.h(11,1): warning C4005: 'COMPONENTS': macro redefinition
-E:\HSTK\HSTK\ExternalStructModual.h(7): message : see previous definition of 'COMPONENTS'
-E:\HSTK\HSTK\RenderModual.h(12,1): warning C4005: 'COMPONENT': macro redefinition
-E:\HSTK\HSTK\ExternalStructModual.h(18): message : see previous definition of 'COMPONENT'
-E:\HSTK\HSTK\RenderModual.h(14,1): warning C4005: 'COMPONENT': macro redefinition
-E:\HSTK\HSTK\RenderModual.h(12): message : see previous definition of 'COMPONENT'
-E:\HSTK\HSTK\RenderModual.h(27,1): warning C4005: 'SYSTEM': macro redefinition
-E:\HSTK\HSTK\RenderModual.h(24): message : see previous definition of 'SYSTEM'
-E:\HSTK\HSTK\RenderModual.h(35,22): warning C4018: '<': signed/unsigned mismatch
-E:\HSTK\HSTK\RenderModual.h(43,33): warning C4018: '<': signed/unsigned mismatch
-E:\HSTK\HSTK\RenderModual.h(60,33): warning C4018: '<': signed/unsigned mismatch
-E:\HSTK\HSTK\RenderModual.h(87,1): warning C4005: 'SYSTEM': macro redefinition
-E:\HSTK\HSTK\RenderModual.h(27): message : see previous definition of 'SYSTEM'
-E:\HSTK\HSTK\RenderModual.h(92,1): warning C4005: 'COMPONENT': macro redefinition
-E:\HSTK\HSTK\RenderModual.h(14): message : see previous definition of 'COMPONENT'
-E:\HSTK\HSTK\main.cpp(7,5): error C3861: 'RegisterExternalStructModual': identifier not found
-E:\HSTK\HSTK\main.cpp(8,5): error C3861: 'RegisterRender': identifier not found
+﻿  raylib.lib(core.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+LINK : fatal error C1900: Il mismatch between 'P1' version '20190715' and 'P2' version '20180423'
+LINK : fatal error LNK1257: code generation failed

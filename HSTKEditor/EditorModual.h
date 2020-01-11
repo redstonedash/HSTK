@@ -1,21 +1,7 @@
 #pragma once
 Shader ortho;
 Model cone;
-struct input {
-	Vector2 mousePositionOnLastClick;
-	Vector2 lastMousePosition;
-	bool action;
-};
-input inputManager = {};
-#pragma region ComponenetDeclares
-struct Selected {
-};
-#define COMPONENTS COMPONENT(Selected)\
 
-#define COMPONENT(id) ecs_entity_t ecs_entity(id);
-COMPONENTS;
-#define COMPONENT(id) ecs_type_t ecs_type(id);
-COMPONENTS;
 #pragma endregion
 #define SYSTEMS SYSTEM(Select, EcsManual, BoundingBox);\
 SYSTEM(Deselect, EcsManual, BoundingBox);\
@@ -36,7 +22,7 @@ SYSTEMS
 
 #pragma endregion
 
-void DrawGizmo(Vector3 position, float length) {
+void DrawGizmo(Vector3 position, float length) { //TODO make system
 	rlPushMatrix();
 	rlTranslatef(position.x, position.y, position.z);
 	rlScalef(length, length, length);
@@ -70,9 +56,8 @@ void DrawOrthoWindow(ecs_rows_t* rows) {
 		DrawBoundingBox(aabb[i], aabbColor);
 		Shader temp = mdl[i].materials[0].shader;
 		mdl[i].materials[0].shader = ortho;
-		DrawModelWires(mdl[i], trs[i].position, 1, modelColor);
+		DrawModelWires(mdl[i], trs[i].translation, 1, modelColor);
 		mdl[i].materials[0].shader = temp;
-
 	}
 }
 
@@ -86,7 +71,7 @@ void Move(ecs_rows_t* rows) {
 	ECS_COLUMN(rows, Transform, trs, 1);
 	Vector3 moveDelta = *((Vector3 *)rows->param);
 	for (int i = 0; i < rows->count; i++) {
-		trs[i].position = Vector3Add(trs[i].position, moveDelta);
+		trs[i].translation = Vector3Add(trs[i].translation, moveDelta);
 	}
 }
 
@@ -102,7 +87,7 @@ void Gizmos(ecs_rows_t* rows) {
 	zoom *= 0.25f;
 	float scale = zoom * 0.125;
 	Vector3 position = { 0,0,0 };
-		position = (trs[0]).position;
+		position = (trs[0]).translation;
 		if (dir & 0b00000001) { //x
 			DrawModelEx(cone, Vector3Add(position, { zoom,0,0 }), { 0,0,1 }, -90, { scale, scale, scale }, RED);
 			if (CheckCollisionPointCircle(Vector2Subtract(inputManager.lastMousePosition, { window.x,window.y }), GetWorldToTexture({ zoom,0,0 }, c, window.width, window.height), 50.0f) //TODO check aabb of cone

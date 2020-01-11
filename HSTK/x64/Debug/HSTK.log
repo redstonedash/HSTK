@@ -1,0 +1,136 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/showincludes'
+  main.cpp
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(9): error C2146: syntax error: missing ';' before identifier 'ecs_entity'
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(9): error C2086: 'int ecs_entity_t': redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(9): note: see declaration of 'ecs_entity_t'
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(10): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(8): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(11): error C2146: syntax error: missing ';' before identifier 'ecs_type'
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(11): error C2086: 'int ecs_type_t': redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(11): note: see declaration of 'ecs_type_t'
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(18): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(10): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(20): error C2065: 'Transform': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(20): error C3861: 'ecs_entity': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(20): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(20): error C3861: 'ecs_new_component': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(20): error C3861: 'ecs_type': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(20): error C3861: 'ecs_type_from_entity': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(20): error C2065: 'Model': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(20): error C2065: 'BoundingBox': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(5): error C3646: 'cameras': unknown override specifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(5): error C2143: syntax error: missing ',' before '['
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(5): error C2143: syntax error: missing ')' before ';'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(5): error C2238: unexpected token(s) preceding ';'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(6): error C3646: 'textures': unknown override specifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(6): error C2143: syntax error: missing ',' before '['
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(6): error C2143: syntax error: missing ')' before ';'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(6): error C2238: unexpected token(s) preceding ';'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(11): warning C4005: 'COMPONENTS': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(7): note: see previous definition of 'COMPONENTS'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(12): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(18): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(13): error C2086: 'int ecs_entity_t': redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(9): note: see declaration of 'ecs_entity_t'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(13): error C2146: syntax error: missing ';' before identifier 'ecs_entity'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(14): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(12): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(15): error C2086: 'int ecs_type_t': redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(11): note: see declaration of 'ecs_type_t'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(15): error C2146: syntax error: missing ';' before identifier 'ecs_type'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(25): error C2086: 'int ecs_entity_t': redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(9): note: see declaration of 'ecs_entity_t'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(25): error C2146: syntax error: missing ';' before identifier 'FrenderModels'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(25): error C2146: syntax error: missing ';' before identifier 'FupdateCamera'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(25): error C2146: syntax error: missing ';' before identifier 'FinitCamera'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(27): warning C4005: 'SYSTEM': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(24): note: see previous definition of 'SYSTEM'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(29): error C2086: 'int ecs_type_t': redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(11): note: see declaration of 'ecs_type_t'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(29): error C2146: syntax error: missing ';' before identifier 'ecs_type'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(33): error C2065: 'ecs_rows_t': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(33): error C2065: 'row': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(33): error C2182: 'renderModels': illegal use of type 'void'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(33): error C2448: 'renderModels': function-style initializer appears to be a function definition
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(40): error C2065: 'ecs_rows_t': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(40): error C2065: 'row': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(40): error C2182: 'updateCamera': illegal use of type 'void'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(40): error C2448: 'updateCamera': function-style initializer appears to be a function definition
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(58): error C2065: 'ecs_rows_t': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(58): error C2065: 'row': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(58): error C2182: 'initCamera': illegal use of type 'void'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(58): error C2448: 'initCamera': function-style initializer appears to be a function definition
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(87): warning C4005: 'SYSTEM': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(27): note: see previous definition of 'SYSTEM'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(92): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(14): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(94): error C2275: 'cubeMapCamera': illegal use of this type as an expression
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(4): note: see declaration of 'cubeMapCamera'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(94): error C3861: 'ecs_entity': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(94): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(94): error C3861: 'ecs_new_component': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(94): error C3861: 'ecs_type': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(94): error C3861: 'ecs_type_from_entity': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C2065: 'FrenderModels': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C2065: 'EcsManual': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C3861: 'ecs_new_system': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C3861: 'ecs_type': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C3861: 'ecs_type_from_entity': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C2065: 'FupdateCamera': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C2065: 'EcsPostUpdate': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C2065: 'FinitCamera': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(98): error C2065: 'EcsOnAdd': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(14): error C3861: 'InitWindow': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(15): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(15): error C3861: 'ecs_init': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(17): error C2146: syntax error: missing ';' before identifier 'gamePiece1'
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(17): error C2065: 'gamePiece1': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(17): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(17): error C3861: 'ecs_new_entity': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(18): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(18): error C2065: 'mainCamera': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(18): error C2275: 'cubeMapCamera': illegal use of this type as an expression
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(4): note: see declaration of 'cubeMapCamera'
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(18): error C2065: 'Transform': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(18): error C3861: 'ECS_ENTITY': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(19): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(19): error C2065: 'mainCamera': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(19): error C2065: 'Transform': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(19): error C3861: 'QuaternionIdentity': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(19): error C3861: 'ecs_set': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(20): error C2065: 'Model': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(20): error C2146: syntax error: missing ';' before identifier 'mdl'
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(20): error C2065: 'mdl': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(20): error C3861: 'LoadModel': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(21): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(21): error C2065: 'gamePiece1': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(21): error C2065: 'Model': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(21): error C2065: 'mdl': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(21): error C3861: 'ecs_set_ref': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(23): error C2065: 'Model': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(23): error C2146: syntax error: missing ';' before identifier 'kube'
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(23): error C2065: 'kube': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(23): error C3861: 'GenMeshCube': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(23): error C3861: 'LoadModelFromMesh': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(24): error C3861: 'WindowShouldClose': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(25): error C2065: 'GRAY': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(25): error C3861: 'ClearBackground': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(26): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(26): error C3861: 'GetFrameTime': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(26): error C3861: 'ecs_progress': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(30): error C3861: 'BeginDrawing': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(32): error C2065: 'gameState': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(32): error C2065: 'mainCamera': undeclared identifier
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(32): error C2275: 'cubeMapCamera': illegal use of this type as an expression
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(4): note: see declaration of 'cubeMapCamera'
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(32): error C3861: 'ecs_get': identifier not found
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(33): error C2039: 'textures': is not a member of 'cubeMapCamera'
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(4): note: see declaration of 'cubeMapCamera'
+c:\users\s189064\documents\github\hstk\hstk\main.cpp(33): fatal error C1003: error count exceeds 100; stopping compilation
