@@ -23,9 +23,6 @@
     <ClInclude Include="EditorModual.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TemplateModual.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="boilerPlateIncludes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -40,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="EditorModual.hpp">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateModual.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

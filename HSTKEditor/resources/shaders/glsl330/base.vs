@@ -6,7 +6,10 @@ in vec2 vertexTexCoord;
 in vec3 vertexNormal;
 in vec4 vertexColor;
 
+in vec3 worldPositon;
+
 // Input uniform values
+uniform vec3 L;
 uniform mat4 mvp;
 
 // Output vertex attributes (to fragment shader)

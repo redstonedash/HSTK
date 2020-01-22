@@ -1,4 +1,24 @@
-﻿  raylib.lib(core.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
-LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
-LINK : fatal error C1900: Il mismatch between 'P1' version '20190715' and 'P2' version '20180423'
-LINK : fatal error LNK1257: code generation failed
+﻿cl : Command line warning D9002: ignoring unknown option '/showincludes'
+  main.cpp
+c:\users\s189064\documents\github\hstk\thirdparty\flecs\flecs\flecs.hpp(361): warning C4244: 'argument': conversion from 'uint32_t' to 'float', possible loss of data
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(10): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(8): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(18): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(10): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(11): warning C4005: 'COMPONENTS': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(7): note: see previous definition of 'COMPONENTS'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(12): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\externalstructmodual.h(18): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(14): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(12): note: see previous definition of 'COMPONENT'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(27): warning C4005: 'SYSTEM': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(24): note: see previous definition of 'SYSTEM'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(35): warning C4018: '<': signed/unsigned mismatch
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(43): warning C4018: '<': signed/unsigned mismatch
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(60): warning C4018: '<': signed/unsigned mismatch
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(87): warning C4005: 'SYSTEM': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(27): note: see previous definition of 'SYSTEM'
+c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(92): warning C4005: 'COMPONENT': macro redefinition
+  c:\users\s189064\documents\github\hstk\hstk\rendermodual.h(14): note: see previous definition of 'COMPONENT'
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  HSTK.vcxproj -> C:\Users\s189064\Documents\GitHub\HSTK\HSTK\Debug\HSTK.exe
